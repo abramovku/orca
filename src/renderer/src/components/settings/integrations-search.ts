@@ -221,5 +221,69 @@ export const getIntegrationsPaneSearchEntries = createLocalizedCatalog(() => [
         'disconnect'
       )
     ]
+  },
+  {
+    title: translate(
+      'auto.components.settings.integrations.search.slackTitle',
+      'Slack Integration'
+    ),
+    description: translate(
+      'auto.components.settings.integrations.search.slackDescription',
+      'Connect Slack so agents can read channels and post messages.'
+    ),
+    keywords: [
+      ...translateSearchKeyword(
+        'auto.components.settings.integrations.search.slackKeyword',
+        'slack'
+      ),
+      ...translateSearchKeyword(
+        'auto.components.settings.integrations.search.c450244ad7',
+        'integration'
+      ),
+      ...translateSearchKeyword(
+        'auto.components.settings.integrations.search.messagesKeyword',
+        'messages'
+      ),
+      ...translateSearchKeyword(
+        'auto.components.settings.integrations.search.2ec2bd328c',
+        'api token'
+      ),
+      ...translateSearchKeyword(
+        'auto.components.settings.integrations.search.3c3d3d8ffa',
+        'connect'
+      )
+    ]
+  },
+  {
+    title: translate(
+      'auto.components.settings.integrations.search.clickupTitle',
+      'ClickUp Integration'
+    ),
+    description: translate(
+      'auto.components.settings.integrations.search.clickupDescription',
+      'Connect ClickUp so agents can read and update tasks.'
+    ),
+    keywords: [
+      ...translateSearchKeyword(
+        'auto.components.settings.integrations.search.clickupKeyword',
+        'clickup'
+      ),
+      ...translateSearchKeyword(
+        'auto.components.settings.integrations.search.c450244ad7',
+        'integration'
+      ),
+      ...translateSearchKeyword(
+        'auto.components.settings.integrations.search.tasksKeyword',
+        'tasks'
+      ),
+      ...translateSearchKeyword(
+        'auto.components.settings.integrations.search.2ec2bd328c',
+        'api token'
+      ),
+      ...translateSearchKeyword(
+        'auto.components.settings.integrations.search.3c3d3d8ffa',
+        'connect'
+      )
+    ]
   }
 ])

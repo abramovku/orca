@@ -66,6 +66,22 @@
       ]
     },
     {
+      "name": "orca-clickup",
+      "sourcePath": "skills/orca-clickup",
+      "packageDigest": "680992cd70dcc2d79f58b8e435024dc532c3811f9ba7b8b026b2ba1195d02a62",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 2068,
+          "executable": false,
+          "classification": "text",
+          "exactSha256": "39ff0688cead117a9e35c21b0c6aabb6359bebcef0e63e4a8254392ba08b2729",
+          "textNormalizedSha256": "39ff0688cead117a9e35c21b0c6aabb6359bebcef0e63e4a8254392ba08b2729",
+          "identitySha256": "39ff0688cead117a9e35c21b0c6aabb6359bebcef0e63e4a8254392ba08b2729"
+        }
+      ]
+    },
+    {
       "name": "orca-emulator",
       "sourcePath": "skills/orca-emulator",
       "packageDigest": "1dc42e5addc613abd85eba639d4ac36d9c7b3bc6f7186f0a2d54d10dae3f06d3",
@@ -142,6 +158,22 @@
           "exactSha256": "c005d126a13d2913351472f07690f1c1a660d4f286e2a5f21864aee294f436ce",
           "textNormalizedSha256": "c005d126a13d2913351472f07690f1c1a660d4f286e2a5f21864aee294f436ce",
           "identitySha256": "c005d126a13d2913351472f07690f1c1a660d4f286e2a5f21864aee294f436ce"
+        }
+      ]
+    },
+    {
+      "name": "orca-slack",
+      "sourcePath": "skills/orca-slack",
+      "packageDigest": "d20e7e4764ddd58cfc31f7e3b2c1c59c8b3d0ac81f614015cb5027c26bad606c",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 2026,
+          "executable": false,
+          "classification": "text",
+          "exactSha256": "1d5c1092513ee4a892a1d5580ddc55e4a4ae18da5101cda2eb6b7b50f765b239",
+          "textNormalizedSha256": "1d5c1092513ee4a892a1d5580ddc55e4a4ae18da5101cda2eb6b7b50f765b239",
+          "identitySha256": "1d5c1092513ee4a892a1d5580ddc55e4a4ae18da5101cda2eb6b7b50f765b239"
         }
       ]
     },

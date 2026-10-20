@@ -40,6 +40,7 @@ import type { LinearApi } from './api/linear-api'
 import type { MobileApi } from './api/mobile-api'
 import type { NativeChatApi } from './api/native-chat-api'
 import type { OnboardingApi, StarNagApi } from './api/onboarding-api'
+import type { PersonalTokenIntegrationApi } from './api/personal-token-integration-api'
 import type { OrcaProfileApi } from './api/orca-profile-api'
 import type {
   ComputerUsePermissionsApi,
@@ -93,6 +94,7 @@ export type PreloadApi = {
   hostedReview: HostedReviewApi
   gl: GitLabApi
   bitbucket: BitbucketApi
+  personalTokenIntegration: PersonalTokenIntegrationApi
   linear: LinearApi
   jira: JiraApi
   starNag: StarNagApi

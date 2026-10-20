@@ -21,6 +21,8 @@ export const HOST_OPERATION_OWNERSHIP = {
   artifacts: 'host',
   automation: 'host',
   browser: 'host',
+  // Slack and ClickUp tokens are saved on the host the agent's CLI talks to.
+  clickup: 'host',
   clipboard: 'host',
   computer: 'host',
   desktopBrowserBridge: 'host',
@@ -61,6 +63,7 @@ export const HOST_OPERATION_OWNERSHIP = {
   sidebarInputs: 'host',
   sidebarSession: 'host',
   skills: 'host',
+  slack: 'host',
   speech: 'host',
   ssh: 'host',
   stats: 'host',

@@ -53,6 +53,7 @@ const {
   registerJiraHandlersMock,
   registerJiraIssueSummaryGenerationHandlersMock,
   registerBitbucketHandlersMock,
+  registerPersonalTokenIntegrationHandlersMock,
   registerGitLabHandlersMock,
   registerHostedReviewHandlersMock,
   registerExportHandlersMock,
@@ -124,6 +125,7 @@ const {
   registerJiraHandlersMock: vi.fn(),
   registerJiraIssueSummaryGenerationHandlersMock: vi.fn(),
   registerBitbucketHandlersMock: vi.fn(),
+  registerPersonalTokenIntegrationHandlersMock: vi.fn(),
   registerGitLabHandlersMock: vi.fn(),
   registerHostedReviewHandlersMock: vi.fn(),
   registerExportHandlersMock: vi.fn(),
@@ -415,6 +417,10 @@ vi.mock('../bitbucket', () => ({
   registerBitbucketHandlers: registerBitbucketHandlersMock
 }))
 
+vi.mock('../personal-token-integrations', () => ({
+  registerPersonalTokenIntegrationHandlers: registerPersonalTokenIntegrationHandlersMock
+}))
+
 vi.mock('../gitlab', () => ({
   registerGitLabHandlers: registerGitLabHandlersMock
 }))
@@ -495,6 +501,7 @@ describe('registerCoreHandlers', () => {
     registerJiraHandlersMock.mockReset()
     registerJiraIssueSummaryGenerationHandlersMock.mockReset()
     registerBitbucketHandlersMock.mockReset()
+    registerPersonalTokenIntegrationHandlersMock.mockReset()
     registerGitLabHandlersMock.mockReset()
     registerHostedReviewHandlersMock.mockReset()
     registerExportHandlersMock.mockReset()
@@ -601,6 +608,7 @@ describe('registerCoreHandlers', () => {
     expect(registerJiraHandlersMock).toHaveBeenCalled()
     expect(registerJiraIssueSummaryGenerationHandlersMock).toHaveBeenCalledWith(store, undefined)
     expect(registerBitbucketHandlersMock).toHaveBeenCalled()
+    expect(registerPersonalTokenIntegrationHandlersMock).toHaveBeenCalled()
     expect(registerGitLabHandlersMock).toHaveBeenCalledWith(store)
     expect(registerHostedReviewHandlersMock).toHaveBeenCalledWith(store, stats)
     expect(registerFeedbackHandlersMock).toHaveBeenCalled()

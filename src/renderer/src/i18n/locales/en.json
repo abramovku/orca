@@ -8042,7 +8042,9 @@
           "3ba07f933b": "Connect issue trackers Orca can use to browse tasks and start workspaces with linked context.",
           "70e885705b": "Task providers",
           "1683acbac4": "Connect the source hosts Orca can use for pull requests, merge requests, checks, and review status.",
-          "298c65ecac": "Review providers"
+          "298c65ecac": "Review providers",
+          "agentToolsTitle": "Agent tools",
+          "agentToolsDescription": "Connect services agents can use through the orca CLI while they work."
         },
         "KagiSessionLinkForm": {
           "92f0b4e472": "Clear",
@@ -10554,7 +10556,15 @@
             "7166b9090c": "GitHub authentication via the gh CLI.",
             "f16e41cc72": "GitHub Integration",
             "760e2446e0": "Bitbucket Cloud authentication with a saved API token or environment variables.",
-            "af5ae87847": "access token"
+            "af5ae87847": "access token",
+            "slackTitle": "Slack Integration",
+            "slackDescription": "Connect Slack so agents can read channels and post messages.",
+            "slackKeyword": "slack",
+            "messagesKeyword": "messages",
+            "clickupTitle": "ClickUp Integration",
+            "clickupDescription": "Connect ClickUp so agents can read and update tasks.",
+            "clickupKeyword": "clickup",
+            "tasksKeyword": "tasks"
           }
         },
         "jira": {
@@ -13236,6 +13246,48 @@
           "tailscale": "Tailscale · {{address}}",
           "lan": "Local network · {{address}}",
           "loopback": "This computer · {{address}}"
+        },
+        "personal": {
+          "token": {
+            "dialog": {
+              "failed": "Connection failed",
+              "replaceTitle": "Replace {{service}} token",
+              "connectTitle": "Connect {{service}}",
+              "description": "Orca checks the token with {{service}} before saving it. Agents then use it through the orca CLI.",
+              "storage": "Stored on this device using Electron encrypted storage when available.",
+              "cancel": "Cancel",
+              "verifying": "Verifying...",
+              "replace": "Replace token",
+              "connect": "Connect"
+            },
+            "integration": {
+              "cards": {
+                "disconnectFailed": "Could not remove the saved {{service}} token.",
+                "statusUnavailable": "Unavailable",
+                "statusConnected": "Connected",
+                "statusNotConnected": "Not connected",
+                "replaceToken": "Replace token",
+                "connect": "Connect",
+                "credentialName": "Your {{service}} token",
+                "disconnect": "Disconnect {{service}}",
+                "statusLoadFailed": "Could not check for a saved {{service}} token.",
+                "slackDescription": "Let agents read channels and threads, search messages, and post updates.",
+                "slackAgentHint": "Agents use `orca slack` commands. The guide is available with `orca skills get orca-slack`.",
+                "slackTokenLabel": "User or bot token",
+                "slackPlaceholder": "xoxp-... / xoxb-...",
+                "slackStep1": "Create a Slack app for your workspace, add OAuth scopes, install it, then copy the User OAuth Token (xoxp-) or Bot User OAuth Token (xoxb-).",
+                "slackStep2": "Scopes: channels:read, channels:history, groups:read, groups:history, users:read, chat:write. Add search:read on a user token to enable search.",
+                "slackDocs": "Your Slack apps",
+                "clickupDescription": "Let agents read, create, and update ClickUp tasks and comments.",
+                "clickupAgentHint": "Agents use `orca clickup` commands. The guide is available with `orca skills get orca-clickup`.",
+                "clickupTokenLabel": "Personal API token",
+                "clickupPlaceholder": "pk_...",
+                "clickupStep1": "In ClickUp, open your avatar > Settings > Apps, then generate or copy your personal API token.",
+                "clickupStep2": "The token acts as you, with access to every workspace you belong to.",
+                "clickupDocs": "ClickUp API settings"
+              }
+            }
+          }
         }
       },
       "right": {

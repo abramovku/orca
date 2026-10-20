@@ -17,11 +17,13 @@ const CANONICAL_GUIDE_NAMES = [
   'jira-tickets',
   'linear-tickets',
   'orca-cli',
+  'orca-clickup',
   'orca-emulator',
   'orca-emulator-android',
   'orca-jira',
   'orca-linear',
   'orca-per-workspace-env',
+  'orca-slack',
   'orchestration'
 ]
 
@@ -32,11 +34,13 @@ const GUIDE_ALIASES = {
   'jira-tickets': [],
   'linear-tickets': [],
   'orca-cli': [],
+  'orca-clickup': [],
   'orca-emulator': [],
   'orca-emulator-android': [],
   'orca-jira': [],
   'orca-linear': [],
   'orca-per-workspace-env': [],
+  'orca-slack': [],
   orchestration: []
 }
 
@@ -50,11 +54,13 @@ const STUB_TOPICS = [
   'jira-tickets',
   'linear-tickets',
   'orca-cli',
+  'orca-clickup',
   'orca-emulator',
   'orca-emulator-android',
   'orca-jira',
   'orca-linear',
   'orca-per-workspace-env',
+  'orca-slack',
   'orchestration'
 ]
 
