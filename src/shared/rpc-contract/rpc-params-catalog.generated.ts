@@ -138,6 +138,15 @@ import {
 } from './browser-params'
 import { ScreencastUnsubscribe } from './browser-screencast-params'
 import { BrowserOpenUrlParams, BrowserTabCreateParams } from './browser-tab-create-params'
+import {
+  ClickUpAddComment,
+  ClickUpCreateTask,
+  ClickUpListTasks,
+  ClickUpSpaceScope,
+  ClickUpTaskId,
+  ClickUpUpdateTask,
+  ClickUpWorkspaceScope
+} from './clickup-params'
 import { ClientEventsUnsubscribeParams } from './client-events-params'
 import {
   NativeChatSessionOptionsMutation,
@@ -517,6 +526,14 @@ import {
   SkillsGetInstallProgressParams
 } from './skills-params'
 import {
+  SlackHistory,
+  SlackListChannels,
+  SlackListUsers,
+  SlackSearch,
+  SlackSend,
+  SlackThread
+} from './slack-params'
+import {
   DictationChunk,
   DictationHandle,
   DictationSetup,
@@ -852,6 +869,16 @@ export const RPC_PARAMS_BY_METHOD = {
   'browser.upload': Upload,
   'browser.viewport': Viewport,
   'browser.wait': Wait,
+  'clickup.addComment': ClickUpAddComment,
+  'clickup.createTask': ClickUpCreateTask,
+  'clickup.getTask': ClickUpTaskId,
+  'clickup.listComments': ClickUpTaskId,
+  'clickup.listLists': ClickUpSpaceScope,
+  'clickup.listSpaces': ClickUpWorkspaceScope,
+  'clickup.listTasks': ClickUpListTasks,
+  'clickup.listWorkspaces': null,
+  'clickup.status': null,
+  'clickup.updateTask': ClickUpUpdateTask,
   'clipboard.abortImageUpload': AbortImageUpload,
   'clipboard.appendImageUploadChunk': AppendImageUploadChunk,
   'clipboard.commitImageUpload': CommitImageUpload,
@@ -1307,6 +1334,13 @@ export const RPC_PARAMS_BY_METHOD = {
   'skills.removeInstall': SkillRemoveRequestSchema,
   'skills.share': AgentSkillShareRequestSchema,
   'skills.uploadChunk': SkillUploadChunkRequestSchema,
+  'slack.history': SlackHistory,
+  'slack.listChannels': SlackListChannels,
+  'slack.listUsers': SlackListUsers,
+  'slack.search': SlackSearch,
+  'slack.send': SlackSend,
+  'slack.status': null,
+  'slack.thread': SlackThread,
   'speech.dictation.cancel': DictationHandle,
   'speech.dictation.chunk': DictationChunk,
   'speech.dictation.finish': DictationHandle,
